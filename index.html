@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>양성경 | Portfolio</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- Font Awesome 아이콘 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 고정 내비게이션 ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">양성경</a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#education" class="navbar__link">Education</a>
+        <a href="#experiences" class="navbar__link">Experiences</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환">
+          <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--light"></i>
+          <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--dark"></i>
+        </button>
+        <button class="navbar__burger" id="navBurger" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== 풀스크린 히어로 ===== -->
+    <section class="hero" id="hero">
+      <p class="hero__bg-text" aria-hidden="true">Clear Vision · Resilient · Global</p>
+      <div class="container hero__content">
+        <p class="hero__name-en">Yang Seongkyeong</p>
+        <h1 class="hero__name">양성경</h1>
+        <p class="hero__headline">데이터를 정리하고 가치를 설계하는, 친절한 회복탄력성을 가진 기획자</p>
+        <p class="hero__intro">
+          문헌정보학과 경제학을 복수 전공하며, 정보를 구조화하고 AI 기반 공공데이터를 활용해 실용적인 서비스를 만든 경험이 있습니다.<br>
+          다양한 현장 조사·프로젝트 멘토링을 통해 사람·관계 중심의 문제 해결력과 글로벌 감각을 키워 왔습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== About 섹션 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">About</span>
+          <h2 class="section__title">저를 소개합니다</h2>
+        </div>
+        <div class="about-card reveal">
+          <p>문헌정보학과 경제학을 복수 전공한 저는 "정보를 어떻게 조직하고 전달할 것인가"라는 질문에 답을 찾는 데 열정을 가지고 있습니다.</p>
+          <p>외국어고등학교에서 영어·독일어를 배우며 다양한 문화와 언어에 대한 호기심을 키웠고, 이는 새로운 분야에 도전하는 원동력이 되었습니다.</p>
+          <p>외부 평가에 휘둘리기보다 스스로의 가치를 지키며 성장하는 것을 중시하고, 힘든 상황에서도 다시 일어서는 회복탄력성을 갖추고 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education 섹션 (세로 타임라인) ===== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Education</span>
+          <h2 class="section__title">학력</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- 타임라인 항목 1 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__body">
+              <span class="timeline__badge">2020 ~ 2022</span>
+              <h3 class="timeline__org">부산외국어고등학교 <span class="timeline__major">(영어·독일어)</span></h3>
+              <p class="timeline__desc">외국어 기반의 글로벌 감각을 다진 고교 생활</p>
+              <ul class="timeline__bullets">
+                <li>학급 반장 (2021–2022) – 학급 운영·회의 주도</li>
+                <li>영어·독일어 전공 교육, 다국적 팀 협업 경험</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 타임라인 항목 2 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__body">
+              <span class="timeline__badge">2023 ~ 현재</span>
+              <h3 class="timeline__org">성균관대학교 <span class="timeline__major">(문헌정보학 주전공 / 경제학 복수전공)</span></h3>
+              <p class="timeline__desc">학술·실무 역량을 동시에 강화한 대학 과정</p>
+              <ul class="timeline__bullets">
+                <li>프레시맨가이드 재정팀 (2023–현재) – 대계열제 신입생 LC 담당, 예산·결산 집행, 물품 조사</li>
+                <li>경제학·문헌정보학 핵심 과목 이수 (거시·미시, IS-MP, AD-AS, LibQUAL+, KOSIS 등)</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experiences 섹션 (2열 카드 그리드) ===== -->
+    <section class="section" id="experiences">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Experiences</span>
+          <h2 class="section__title">주요 경험</h2>
+        </div>
+
+        <div class="exp-grid">
+          <!-- 경험 카드 1 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">LocalSync (니행내행) – 비수도권 청년 정착 지원 웹서비스</h3>
+            <p class="exp-card__meta">2023 ~ 2025 · 팀 니행내행</p>
+            <ul class="exp-card__bullets">
+              <li>35종 공공데이터 기반 AI 플랫폼 MVP 배포 (Vercel, 10화면)</li>
+              <li>"실속 계산기" 설계 – 지역 세후소득·주거비·지원금·3년 정착 비용을 비교·분석</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">AI-Web-Service</span>
+              <span class="tag">Public-Data</span>
+              <span class="tag">Financial-Calculator</span>
+            </div>
+          </article>
+
+          <!-- 경험 카드 2 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">세잎 (Future Tomorrow 일경험) – 게임·IP SNS 마케팅 프로젝트</h3>
+            <p class="exp-card__meta">2025 04 ~ 06 · 팀 세잎</p>
+            <ul class="exp-card__bullets">
+              <li>AI 영상 콘텐츠 4채널(꾸룩이·이겜봤냐·CrunchGems·DinoTycoon Universe) 기획·운용, 누적 조회수 16.5만 회 초과</li>
+              <li>기업·멘토 피드백 수집·포트폴리오 모델 검증</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">YouTube-Marketing</span>
+              <span class="tag">AI-Content</span>
+              <span class="tag">Channel-Analytics</span>
+            </div>
+          </article>
+
+          <!-- 경험 카드 3 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">Brown University Global Summer Mentor – Korea Energy Sector</h3>
+            <p class="exp-card__meta">2025 06 28–29 / 07 05–06 · Brown University (EAST 0315)</p>
+            <ul class="exp-card__bullets">
+              <li>방한 학생들의 한국 문화·현지 적응 지원, 교육 자료 제작</li>
+              <li>문화·언어 교류 촉진으로 현지 만족도 92% 달성</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">Global-Mentor</span>
+              <span class="tag">Energy-Sector</span>
+              <span class="tag">Cultural-Exchange</span>
+            </div>
+          </article>
+
+          <!-- 경험 카드 4 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">SKKU HUSS BRIDGE Builder – 인도네시아 현장조사</h3>
+            <p class="exp-card__meta">2025 08 07–13 (5박 7일) · 인도네시아 발리·말랑</p>
+            <ul class="exp-card__bullets">
+              <li>사누르 지역 외국인·장기체류 현상 현장조사 및 설문 150명 실시</li>
+              <li>"문화 기반 몰입형 관광·장기체류 웰니스 마을" 정책 시사점 도출, 국제 학술대회 발표</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">Field-Research</span>
+              <span class="tag">Policy-Design</span>
+              <span class="tag">Sustainable-Tourism</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills 섹션 ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Skills</span>
+          <h2 class="section__title">핵심 역량</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 스킬 카테고리 1 -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">기획·전략</h3>
+            <div class="tag-group">
+              <span class="tag">Project-Planning</span>
+              <span class="tag">Logic-Design</span>
+              <span class="tag">Business-Model</span>
+            </div>
+          </div>
+
+          <!-- 스킬 카테고리 2 -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">데이터·AI</h3>
+            <div class="tag-group">
+              <span class="tag">Public-Data</span>
+              <span class="tag">AI-Modeling</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+
+          <!-- 스킬 카테고리 3 -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">마케팅·콘텐츠</h3>
+            <div class="tag-group">
+              <span class="tag">YouTube-Strategy</span>
+              <span class="tag">Meme-Format</span>
+              <span class="tag">Content-Production</span>
+            </div>
+          </div>
+
+          <!-- 스킬 카테고리 4 -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">글로벌·협업</h3>
+            <div class="tag-group">
+              <span class="tag">International-Fieldwork</span>
+              <span class="tag">Cross-Cultural-Comms</span>
+              <span class="tag">Mentor-Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact 섹션 ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title">연락하기</h2>
+        </div>
+        <p class="contact-message reveal">함께 이야기 나누고 성장할 기회를 기대합니다. 언제든 연락 주세요!</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== 푸터 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 양성경. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== 챗봇 ===== -->
+  <div class="chatbot" id="chatbot">
+    <!-- 챗봇 열기 버튼 -->
+    <button class="chatbot__toggle" id="chatToggle" aria-label="챗봇 열기">
+      <i class="fa-solid fa-comment-dots chatbot__toggle-icon chatbot__toggle-icon--open"></i>
+      <i class="fa-solid fa-xmark chatbot__toggle-icon chatbot__toggle-icon--close"></i>
+    </button>
+
+    <!-- 챗봇 패널 -->
+    <div class="chatbot__panel" id="chatPanel" aria-hidden="true">
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <span class="chatbot__header-label">AI Assistant</span>
+          <h3 class="chatbot__header-title">양성경에 대해 물어보세요</h3>
+        </div>
+        <button class="chatbot__close" id="chatClose" aria-label="챗봇 닫기">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- 메시지 영역 -->
+      <div class="chatbot__messages" id="chatMessages">
+        <div class="chatbot__message chatbot__message--bot">
+          <p>안녕하세요! 양성경에 대해 궁금한 점이 있으시면 편하게 물어보세요.</p>
+        </div>
+      </div>
+
+      <!-- 입력 영역 -->
+      <form class="chatbot__input-area" id="chatForm">
+        <input
+          type="text"
+          class="chatbot__input"
+          id="chatInput"
+          placeholder="메시지를 입력하세요..."
+          autocomplete="off"
+        >
+        <button type="submit" class="chatbot__send" id="chatSend" aria-label="전송">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 스크립트 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>
